@@ -1,5 +1,25 @@
-# History files
-.Rhistory
+#################
+## R packages
+#################
 
-# Example code in package build process
-*-Ex.R
+*.Rproj
+*.Rdata
+*.Rhistory
+.Rbuildignore
+.Rhistory
+NAMESPACE
+man/*.Rd
+*~
+auto/
+*.tex
+*.aux
+*.bbl
+*.blg
+*.log
+*.out
+*.toc
+*.synctex
+*.synctex.gz
+*.dvi
+*.pdf
+.Rproj.user

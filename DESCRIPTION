@@ -1,0 +1,9 @@
+Package: mdsutils
+Type: Package
+Title: Miscellaneous tools for sumnerd.
+Version: 0.0-1
+Depends: rgdal, sp
+Author: Michael D. Sumner
+Maintainer: Michael D. Sumner <mdsumner@gmail.com>
+Description: Miscellaneous tools, odbc connection for Manifold, and generic interface to a set of remote sensing datasets. The user can harvest the required metadata using traditional means, define a function to store that and then read data from any file using coordinate limits. The read function will look after the coordinate system, the spatial clipping (including Pacific or Atlantic worlds, date-time names from files, the required data bands and any scaling. 
+License: GPL 2
