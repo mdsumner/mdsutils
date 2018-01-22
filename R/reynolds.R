@@ -4,8 +4,7 @@ function (time = ISOdate(1993, 8, 4), xlim = c(0.5, 359.5), ylim = c(-89.5,
 {
     files <- list.files(dir, pattern = "oisst")
     dates <- as.numeric(gsub(".gz", "", gsub("oisst.", "", files)))
-    fl <- files[which.min(abs(dates - as.numeric(format(time, 
-        "%Y%m%d"))))]
+    fl <- files[which.min(abs(difftime(strptime(as.character(dates),format="%Y%m%d"),format(time2,"%Y-%m-%d"))))]
 
     if (length(grep(".gz", fl)) == 1)
       con <- gzfile(file.path(dir, fl), "rb") else    con <- file(file.path(dir, fl), "rb")
